@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta property="og:title" content="LIVE | Mocha The Raccoon">
+	<meta property="og:url" content="/">
+	<meta property="og:description" content="Welcome the mochara.cc, the redirection link for MochaTheRaccoon.com links.">
+		<meta property="og:image" content="img/logo.png">
+	<!-- For everything else -->
+	<link rel="shortcut icon" href="img/favicon.png">
+<meta name="theme-color" content="#FF0054">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rethink+Sans">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1; url=https://twitch.tv/MochaRacc">
+    <title>Mocha The Raccoon | Redirecting you to twitch.tv/MochaRacc</title>
+
+    <!-- TWITTER/X CARD PREVIEW -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mocha The Raccoon | LIVE on Twitch.tv">
+    <meta name="twitter:site" content="@MochaRacc_">
+    <meta name="twitter:image" content="https://mochara.cc/streaming-tonight/est2.png">
+
+
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Rethink Sans, sans-serif;
+        }
+        img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .redirect-text {
+            text-align: center;
+        }
+        .redirect-text a {
+            color: #ff0054;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo in the center -->
+    <img src="img/logo.png" alt="Logo">
+
+    <!-- Text below the logo -->
+    <div class="redirect-text">
+        <p>Redirecting you to <span id="redirect-url">https://twitch.tv/MochaRacc</span></p>
+        <p>If you are not redirected in the next second, <a href="https://twitch.tv/MochaRacc">click here</a>.</p>
+    </div>
+
+    <script>
+        // Get the URL from the meta tag and update the displayed text dynamically
+        const metaTag = document.querySelector('meta[http-equiv="refresh"]');
+        const redirectUrl = metaTag.content.split('url=')[1];
+        document.getElementById('redirect-url').textContent = redirectUrl;
+        document.querySelector('.redirect-text a').href = redirectUrl;
+    </script>
+
+</body>
+</html>
