@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=SUSE:400,700&display=swap');
 
 :root {
-    --bgColor: #ff0054;
-    --bgColor2: #ff0054;
-    --accentColor: #fff;
+    --bgColor: #ecbe96;
+    --bgColor2: #ecbe96;
+    --accentColor: #000;
     --font: 'SUSE', sans-serif;
     --delay: .3s;
 }
@@ -25,7 +25,7 @@ body {
 
 #profilePicture, #profilePicture img {
     position: relative;
-    height: 246px;
+    height: 100px;
     display: block;
     margin: 40px auto 20px;
     -webkit-tap-highlight-color: transparent;
