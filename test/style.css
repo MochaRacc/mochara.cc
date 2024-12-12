@@ -1,10 +1,10 @@
-@import url('https://fonts.cdnfonts.com/css/iciel-gotham');
+@import url('https://fonts.googleapis.com/css?family=SUSE:400,700&display=swap');
 
 :root {
-    --bgColor: #ecbe96;
-    --bgColor2: #ecbe96;
+    --bgColor: #ff0054;
+    --bgColor2: #ff0054;
     --accentColor: #000;
-    --font: 'iCiel Gotham', sans-serif;
+    --font: 'SUSE', sans-serif;
     --delay: .3s;
 }
 
@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    font-family: var(--font);   
+    font-family: var(--font);
     background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
     /* background-image: url('https://bit.ly/3nFVqJh'); */
     opacity: 0;
@@ -34,6 +34,7 @@ body {
 #userName {
     color: var(--accentColor);
     font-size: 1rem;
+    font-weight: bold;
     line-height: 1.25;
     display: block;
     font-family: var(--font);
