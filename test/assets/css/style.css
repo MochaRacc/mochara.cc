@@ -38,6 +38,10 @@ div.row:not(:last-of-type) {
 	transform: scale(0);
 	line-height: 1em;
 }
+.card:hover {
+	color: #ffffff;
+}
+
 
 .card-link {
 	cursor: pointer;
@@ -45,7 +49,7 @@ div.row:not(:last-of-type) {
 }
 
 .card-link:hover {
-	background: #FFE2DA;
+	background: #ff0054;
 }
 
 .card-link:active {
