@@ -11,7 +11,8 @@
 body {
 	background: url("/assets/img/bg.png"), #ECE7EB;
 	font-family: 'GothamPro', sans-serif;
-	letter-spacing: -1px;
+	letter-spacing: -2px;
+	font-weight: bold;
 }
 
 #container {
