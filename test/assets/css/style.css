@@ -1,3 +1,4 @@
+@import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
 ::selection {
 	background: #838699;
 	color: #fdfdfd;
@@ -9,7 +10,8 @@
 
 body {
 	background: url("/assets/img/bg.png"), #ECE7EB;
-	font-family: "Helvetica", sans-serif;
+	font-family: 'GothamPro', sans-serif;
+	letter-spacing: -1px;
 }
 
 #container {
