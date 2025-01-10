@@ -68,10 +68,9 @@ a.card-link:not(:last-of-type) {
 #mocha {
 	bottom: 0;
 	height: 800px;
-	left: 15%;
+	right: -28%;
 	overflow: hidden;
 	position: fixed;
-	transform-origin: bottom;
 	transform: translate(-50%) scale(0.5);
 	z-index: -9999;
 }
