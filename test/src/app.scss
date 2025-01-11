@@ -1,0 +1,63 @@
+@import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'GothamPro', sans-serif;
+  font-size: 14pt;
+  background: #0f0f0f;
+}
+
+canvas {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+}
+
+#container {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+}
+
+#logo {
+  background-image: url("/test/static/img/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100px;
+  height: 26px;
+  transition: filter 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
+#links {
+  > a {
+    display: table;
+    color: #ff0054;
+    font-weight: 500;
+    text-decoration: none;
+    transition:
+      filter 0.6s cubic-bezier(0.13, 0.62, 0, 0.97),
+      letter-spacing 0.6s cubic-bezier(0.13, 0.62, 0, 0.97);
+
+    &:hover {
+      letter-spacing: 1px;
+    }
+
+    &:active {
+      letter-spacing: 2px;
+    }
+  }
+}
+
+@media only screen and (pointer: coarse) and (hover: none) {
+  #container {
+    zoom: 2;
+  }
+}
