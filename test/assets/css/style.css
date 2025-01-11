@@ -16,7 +16,7 @@ body {
 }
 
 #grad1 {
-	height: 10%;
+	height: 500px;
 	background-image: linear-gradient(to top, rgba(255,0,84,0), rgba(255,0,84,1));
   }
 
