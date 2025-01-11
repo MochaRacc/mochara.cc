@@ -12,10 +12,13 @@ body {
 	background: url("/test/assets/img/bg.png"), #ff0054;
 	background-repeat: repeat-x; /* Ensures the image repeats horizontally */
     background-size: cover; /* Adjusts image size, optional */
-    animation: moveBg 10s linear infinite; /* Applies animation */
 	font-family: 'GothamPro', sans-serif;
 	letter-spacing: -1px;
 	font-weight: bold;
+}
+
+body>img {
+	animation: moveBg 10s linear infinite; /* Applies animation */
 }
 
 #grad1 {
