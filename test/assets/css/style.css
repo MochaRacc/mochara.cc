@@ -69,11 +69,11 @@ a.card-link:not(:last-of-type) {
 }
 
 #mocha {
-	bottom: -67px;
-	height: 1214px;
-	right: -46%;
+	bottom: -69px;
+	height: 1230px;
+	right: -51%;
 	position: fixed;
-	transform: translate(-34%) scale(0.6);
+	transform: translate(-33%) scale(0.6);
 	z-index: 9999;
 }
 
