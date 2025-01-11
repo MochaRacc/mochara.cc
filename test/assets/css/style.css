@@ -10,6 +10,9 @@
 
 body {
 	background: url("/test/assets/img/bg.png"), #ff0054;
+	background-repeat: repeat-x; /* Ensures the image repeats horizontally */
+    background-size: cover; /* Adjusts image size, optional */
+    animation: moveBg 10s linear infinite; /* Applies animation */
 	font-family: 'GothamPro', sans-serif;
 	letter-spacing: -1px;
 	font-weight: bold;
@@ -114,4 +117,13 @@ footer {
 	to {
 		transform: translateY(0%);
 	}
+}
+
+@keyframes moveBg {
+    from {
+        background-position: 100% 0;
+    }
+    to {
+        background-position: 0 0;
+    }
 }
