@@ -73,7 +73,7 @@ a.card-link:not(:last-of-type) {
 	height: 1230px;
 	right: -51%;
 	position: fixed;
-	transform: translate(-33%) scale(0.6);
+	transform: translate(-33%) scale(0.5);
 	z-index: 9999;
 }
 
