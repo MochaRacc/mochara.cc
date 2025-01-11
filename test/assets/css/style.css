@@ -33,7 +33,7 @@ body {
 }
 
 div.row:not(:last-of-type) {
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 .card {
