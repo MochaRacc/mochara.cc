@@ -64,11 +64,11 @@ a.card-link:not(:last-of-type) {
 }
 
 #mocha {
-	bottom: 50px;
-	height: 1300px;
-	right: -70%;
+	bottom: -67px;
+	height: 1214px;
+	right: -44%;
 	position: fixed;
-	transform: translate(-35%) scale(0.4);
+	transform: translate(-34%) scale(0.6);
 	z-index: 9999;
 }
 
