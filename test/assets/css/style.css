@@ -9,7 +9,7 @@
 }
 
 body {
-	background: url("/test/assets/img/bg.png"), #ECE7EB;
+	background: url("/test/assets/img/bg.png"), #ff0054;
 	font-family: 'GothamPro', sans-serif;
 	letter-spacing: -1px;
 	font-weight: bold;
@@ -33,16 +33,14 @@ div.row:not(:last-of-type) {
 
 .card {
 	animation: grow .8s ease forwards;
-	background: #fdfdfd;
-	box-shadow: 10px 10px #666064;
-	color: #000000;
+	color: #ffffff;
 	font-size: 2em;
-	padding: 1em;
+	padding: 0.4em;
 	transform: scale(0);
 	line-height: 1em;
 }
 .card:hover {
-	color: #ffffff;
+	color: #ff0054;
 }
 
 
@@ -52,7 +50,7 @@ div.row:not(:last-of-type) {
 }
 
 .card-link:hover {
-	background: #ff0054;
+	background: #ffffff;
 }
 
 .card-link:active {
@@ -80,7 +78,7 @@ a.card-link:not(:last-of-type) {
 
 footer {
 	bottom: 0;
-	color: #282D4E;
+	color: #ffffff;
 	font-size: 20px;
 	left: 50%;
 	margin-bottom: 50px;
