@@ -35,7 +35,7 @@ div.row:not(:last-of-type) {
 	animation: grow .8s ease forwards;
 	color: #ffffff;
 	font-size: 2em;
-	padding: 0.4em;
+	padding: 1em;
 	transform: scale(0);
 	line-height: 1em;
 }
