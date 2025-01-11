@@ -70,10 +70,10 @@ a.card-link:not(:last-of-type) {
 
 #mocha {
 	bottom: -69px;
-	height: 1230px;
+	height: 1100px;
 	right: -51%;
 	position: fixed;
-	transform: translate(-33%) scale(0.5);
+	transform: translate(-33%) scale(0.4);
 	z-index: 9999;
 }
 
