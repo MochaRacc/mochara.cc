@@ -1,0 +1,23 @@
+@import url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
+
+body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'GothamPro', sans-serif;
+            letter-spacing: -1px;
+        }
+        img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .redirect-text {
+            text-align: center;
+        }
+        .redirect-text a {
+            color: #ff0054;
+            text-decoration: none;
+        }
