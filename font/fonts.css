@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'EquitanSans';
+    src: url('EquitanSans-SemiBold.eot');
+    src: url('EquitanSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('EquitanSans-SemiBold.woff2') format('woff2'),
+        url('EquitanSans-SemiBold.woff') format('woff'),
+        url('EquitanSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grenette Pro';
+    src: url('GrenettePro-SemiBoldItalic.eot');
+    src: url('GrenettePro-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('GrenettePro-SemiBoldItalic.woff2') format('woff2'),
+        url('GrenettePro-SemiBoldItalic.woff') format('woff'),
+        url('GrenettePro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+

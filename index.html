@@ -1,39 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#ff0054">
+      <!-- Favicon -->
+      <link rel="icon" href="/favicon.png" type="image/x-icon" />
+      <!-- meta:og -->
+      <meta name="theme-color" content="#ff0054">
+      <meta property="og:title" content="Mocha The Raccoon">
+      <meta property="og:url" content="/">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="/favicon.png">
+			<script src="redirection-mobile.js"></script>
+			<script>
+				SA.redirection_mobile();
+			</script>
 
-<meta property="og:title" content="Mocha The Raccoon">
-	<meta property="og:url" content="/">
-	<meta property="og:description" content="Welcome the mochara.cc, the redirection link for MochaTheRaccoon.com links.">
-		<meta property="og:image" content="img/logo.png">
-	<!-- For everything else -->
-	<link rel="shortcut icon" href="img/favicon.png">
-<meta name="theme-color" content="#FF0054">
-<link rel="stylesheet" href="style.css">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="1; url=https://mochatheraccoon.com">
-    <title>Mocha The Raccoon | Redirecting you to mochatheraccoon.com</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Domine">
+  <link href="style.css" rel="stylesheet">
+  <link href="/font/fonts.css" rel="stylesheet">
+  <title>Mocha The Raccoon</title>
 </head>
-<body>
 
-    <!-- Logo in the center -->
-    <img src="img/logo.svg" alt="Logo">
-
-    <!-- Text below the logo -->
-    <div class="redirect-text">
-        <p>Redirecting you to <span id="redirect-url">https://mochatheraccoon.com</span></p>
-        <p>If you are not redirected in the next second, <a href="https://mochatheraccoon.com">click here</a>.</p>
-    </div>
-
-    <script>
-        // Get the URL from the meta tag and update the displayed text dynamically
-        const metaTag = document.querySelector('meta[http-equiv="refresh"]');
-        const redirectUrl = metaTag.content.split('url=')[1];
-        document.getElementById('redirect-url').textContent = redirectUrl;
-        document.querySelector('.redirect-text a').href = redirectUrl;
+<body data-sveltekit-preload-data="hover">
+  <div style="display: contents">
+    <div id="container"><span id="logo" title="Mocha The Raccoon" data-hover=""></span>
+      <div id="topText">
+        now playing: euro truck sim 2
+      </div>
+  
+      <script>
+        // Array of random texts
+        const randomTexts = [
+            "Now Playing: Euro Truck Sim 2",
+            "Tell them to bring out the whole ocean",
+            "burschurger",
+            <!-- MUNNEL STUFF :) -->
+            "They're building a munnel under melbourne",
+            "他们正在墨尔本地下建造一条 Munnel",
+            "Apparently comeng in munnel cant fit blah blah blah",
+            "Lets get freaky on the hcmt at arden",
+            <!-- MUNNEL STUFF :) -->
+            "Tell my tax man that I did NOT buy thigh highs",
+            "I'm a sized McLaren MCL39 if anyone is curious",
+            "Collingwood supporters DNI",
+            "Now playing: #41 by Dave Matthews Band",
+            ":3",
+            "Dr Pepper and a raccoon goes well",
+            "Buy angy paws (not sponsored)",
+            "I did the logo for Packbase, visit packbase.app to see it in action",
+            "GET OUT OF MY ROOM IM PLAYING MINECRAFT !!!",
+            "IMG_3452.jpg",
+            "🦝🛹",
+            "I'll have two number 9's, a number 9 large, a number 7, two number 45's, one with cheese, and a large soda.",
+            "If you see this, you're cute!",
+            "ehrm what the racc",
+            "Could i have be, a parking lot attendant",
+            "Oskar if you see this, say hi with a screenshot of this",
+            "Remember, if you can't type in the current url for this site, use mochara.cc :)",
+        ];
+  
+        // Select the element
+        const topTextElement = document.getElementById('topText');
+  
+        // Pick a random text
+        const randomIndex = Math.floor(Math.random() * randomTexts.length);
+        topTextElement.textContent = randomTexts[randomIndex];
     </script>
+  
+      <div id="links">
+        <a data-hover="" rel="me" href="https://youtube.com/@MochaRacc">YouTube</a>
+        <a data-hover="" rel="me" href="https://bsky.app/profile/mochara.cc">Bluesky</a>
+        <a data-hover="" rel="me" href="https://twitter.com/MochaRacc_">Twitter/X</a>
+        <a data-hover="" rel="me" href="https://instagram.com/MochaRacc">Instagram</a>
+        <a data-hover="" rel="me" href="https://www.tiktok.com/@mocharacc">TikTok</a>
+        <a data-hover="" rel="me" href="https://ko-fi.com/MochaTheRaccoon">Ko-Fi</a>
+        <a data-hover="" rel="me" href="https://t.me/MochaRacc">Telegram</a>
+        <a data-hover="" rel="me" href="https://www.furtrack.com/index/character:mocha_(raccoon)">Furtrack</a>
+        <a data-hover="" rel="me" href="https://packbase.app/@mocha">Packbase</a>
+        <a data-hover="" rel="me" href="mailto:hello@mochara.cc">Send me an e-mail</a>
+      </div>
+    </div>
+    <div id="svelte-announcer" aria-live="assertive" aria-atomic="true"
+      style="position: absolute; left: 0px; top: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px;">
+    </div>
+  </div>
 
+  <div id="mochuhh">
+    <img src="mocha.png" title="ooooo a floating racc (art by @Pikunukki on instagram & twitter)">
+  </div>
+
+  <canvas width="1920" height="918" style="touch-action: none; cursor: inherit;"></canvas>
 </body>
+
 </html>
