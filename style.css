@@ -6,9 +6,9 @@
 body {
     background: #ff0054;
     font-family: 'EquitanSans', sans-serif;
-    font-size: 24pt;
+    font-size: 50pt;
     font-weight: 500;
-    line-height: 1.1;
+    line-height: 0.6;
 }
 
 canvas {
