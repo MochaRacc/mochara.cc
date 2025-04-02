@@ -91,12 +91,13 @@ canvas {
 
 #mochuhh {
 	bottom: 0px;
-	height: 981px;
-	right: -119%;
+	height: 534px;
+	right: -27%;
 	position: fixed;
-	transform: translate(-35%) scale(0.2);
+	transform: translate(-34%) scale(0.5);
 	z-index: 9999;
 }
+
 
 #mochuhh>img {
 	animation: 2s float ease-in-out infinite alternate;
