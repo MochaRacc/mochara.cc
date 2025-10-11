@@ -7,9 +7,9 @@ body {
     background: #694d76;
 	font-family: 'Archivo', sans-serif;
 	font-stretch: expanded;
-    font-size: 50pt;
+    font-size: 30pt;
     font-weight: 500;
-    line-height: 0.6;
+    line-height: 1;
 }
 
 canvas {
