@@ -1,7 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#694d76">
       <!-- Favicon -->
       <link rel="icon" href="/favicon.png" type="image/x-icon" />
       <!-- meta:og -->
-      <meta name="theme-color" content="#ff0054">
+      <meta name="theme-color" content="#694d76">
       <meta property="og:title" content="Mocha The Raccoon">
       <meta property="og:url" content="/">
       <meta property="og:description" content="">
@@ -60,13 +68,38 @@
             "Remember, if you can't type in the current url for this site, use mochara.cc :)",
             "go buy a blåhaj from ikea if you havent already",
         ];
-		</script>
   
         // Select the element
+        const topTextElement = document.getElementById('topText');
+  
+        // Pick a random text
+        const randomIndex = Math.floor(Math.random() * randomTexts.length);
+        topTextElement.textContent = randomTexts[randomIndex];
+    </script>
+  
+      <div id="links">
+        <a data-hover="" rel="me" href="https://youtube.com/@MochaRacc">YouTube</a>
+        <a data-hover="" rel="me" href="https://bsky.app/profile/mochara.cc">Bluesky</a>
+        <a data-hover="" rel="me" href="https://twitter.com/MochaRacc_">Twitter/X</a>
+        <a data-hover="" rel="me" href="https://instagram.com/MochaRacc">Instagram</a>
+        <a data-hover="" rel="me" href="https://www.tiktok.com/@mocharacc">TikTok</a>
+        <a data-hover="" rel="me" href="https://ko-fi.com/MochaTheRaccoon">Ko-Fi</a>
+        <a data-hover="" rel="me" href="https://t.me/MochaRacc">Telegram</a>
+        <a data-hover="" rel="me" href="https://www.furtrack.com/index/character:mocha_(raccoon)">Furtrack</a>
+        <a data-hover="" rel="me" href="https://packbase.app/@mocha">Packbase</a>
+        <a data-hover="" rel="me" href="mailto:hello@mochara.cc">Send me an e-mail</a>
+      </div>
+    </div>
+    <div id="svelte-announcer" aria-live="assertive" aria-atomic="true"
+      style="position: absolute; left: 0px; top: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px;">
+    </div>
   </div>
- 
+
   <div id="mochuhh">
     <img src="goobert.png" title="ooooo a floating racc (art by @mawbyte on twitter & bluesky)">
   </div>
 
   <canvas width="1920" height="918" style="touch-action: none; cursor: inherit;"></canvas>
+</body>
+
+</html>
