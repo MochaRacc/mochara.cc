@@ -5,7 +5,6 @@
 
 body {
     background: #694d76;
-	color: #1a1a1a;
 	font-family: 'Archivo', sans-serif;
 	font-stretch: expanded;
     font-size: 50pt;
@@ -29,7 +28,7 @@ canvas {
 }
 
 #logo {
-    background-image: url(wordmark.svg);
+    background-image: url(logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
@@ -108,4 +107,14 @@ canvas {
 
 #mochuhh>img {
 	animation: 2s float ease-in-out infinite alternate;
+}
+
+@keyframes float {
+	from {
+		transform: translateY(3%);
+	}
+
+	to {
+		transform: translateY(0%);
+	}
 }
