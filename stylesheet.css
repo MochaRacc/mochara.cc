@@ -28,7 +28,7 @@ canvas {
 }
 
 #logo {
-    background-image: url(logo.svg);
+    background-image: url(wordmark.svg);
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
