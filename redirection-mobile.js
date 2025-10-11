@@ -1,4 +1,3 @@
-@ -1,173 +0,0 @@
 /*
 * JS Redirection Mobile
 *
