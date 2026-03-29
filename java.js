@@ -66,8 +66,25 @@ document.querySelectorAll('.title-bar').forEach(header => {
 });
 
 
-document.getElementById('desktop').addEventListener('mousedown', (e) => {
-    if (e.target.id === 'desktop') {
-        document.getElementById('start-menu').classList.add('hidden');
+header.onmousedown = function(e) {
+    if (window.innerWidth <= 600) return;
+    
+    const win = header.parentElement;
+    win.style.zIndex = ++highestZ;
+
+    // Capture the distance between the mouse and the window's top-left corner
+    let shiftX = e.clientX - win.offsetLeft;
+    let shiftY = e.clientY - win.offsetTop;
+
+    function onMouseMove(e) {
+        win.style.left = (e.clientX - shiftX) + 'px';
+        win.style.top = (e.clientY - shiftY) + 'px';
     }
-});
+
+    document.addEventListener('mousemove', onMouseMove);
+
+    document.onmouseup = function() {
+        document.removeEventListener('mousemove', onMouseMove);
+        document.onmouseup = null;
+    };
+};
