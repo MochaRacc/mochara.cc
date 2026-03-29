@@ -127,6 +127,18 @@ h1 { font-size: 16px; margin: 0; }
     gap: 5px;
 }
 
+#taskbar-button { 
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 8px; 
+    height: 24px; 
+    border: 2px solid; 
+    border-color: var(--win-white) var(--win-black) var(--win-black) var(--win-white); 
+    background: var(--win-grey);
+    gap: 5px;
+}
+
 #start-button img { width: 16px; height: 16px; }
 
 #start-menu {
