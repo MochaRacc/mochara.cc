@@ -139,7 +139,7 @@ h1 { font-size: 16px; margin: 0; }
 .hidden { display: none !important; }
 
 .start-sidebar { 
-    background: linear-gradient(to bottom, #444, #888); 
+    background: linear-gradient(to bottom, #5900ac, #a765e6); 
     width: 30px; color: white; transform: rotate(180deg); 
     writing-mode: vertical-rl; text-align: center; padding: 10px 5px; font-weight: bold; 
 }
