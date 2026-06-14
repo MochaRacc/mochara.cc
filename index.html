@@ -63,23 +63,19 @@
     </div>
 </div>
 
- <div class="window active-win" id="main-window" style="left: 75%; top: 25%; transform: translate(-50%, -50%);">
+ <div class="window active-win" id="new-site-soon" style="left: 75%; top: 25%; transform: translate(-50%, -50%);">
         <div class="title-bar">
-            <div class="title-bar-text">M:/birthday.exe</div>
+            <div class="title-bar-text">M:/NewSite.exe</div>
             <div class="title-bar-controls">
-                <button aria-label="Close" onclick="toggleWindow('main-window')"></button>
+                <button aria-label="Close" onclick="toggleWindow('new-site-soon')"></button>
             </div>
         </div>
         <div class="window-content">
             <div class="profile-header">
 
-                <video width="240" height="240" controls>
-                <source src="birf.mp4" type="video/mp4">
-                a youtube mirror is coming in the morning (sobs loudly)
-                </video>
-
-                <h1>It's my 21st birthday today!</h1>
-                <p>Feel free to send a birthday message to my email (hello@mochara.cc) or on my socials.</p>
+                <img src="now-serving.png" alt="An image with the caption 'A new website experience is coming soon!' with the new Mocha wordmark." class="profile-img">
+                <h1>New wordmark, new website. (soon)</h1>
+                <p>I'm cooking up a new website to go alongside a new, better and someone familiar looking wordmark, so take a number and you'll be called for when it's ready.</p>
             </div>    
         </div>
     </div>
@@ -89,7 +85,7 @@
     <div class="start-sidebar"><b>racc</b>OS</div>
     <div class="start-items">
         <div class="start-item">This website was built amongst the traditional owners of the Wurundjuri Woiwurung land, past, present and emerging.</div>
-        <div class="start-item">Copyright 2026 - Mocha The Raccoon © | The logo, created by beeflover01 and the workmarking, created by me using the "Blopp" typeface by laynecom on FontStruct,is used with no commercial use intended.</div>
+        <div class="start-item">Copyright 2026 - Mocha The Raccoon © | The logo, created by beeflover01 and the workmarking, using the "Rolus Script" typeface by Manraj Ubhi on Creative Market.</div>
         <div class="start-item"> naarm rulez!1!1!1!1</div>
         <hr>
         <a href="mailto:hello@mochara.cc" class="start-item" style="text-decoration:none; color:black;">email me</a>
@@ -107,6 +103,12 @@
         mochara.cc
     </button>
     
+        <p style="letter-spacing: 3px;"> &nbsp; &nbsp; </p>
+    <button id="taskbar-button" onclick="toggleWindow('new-site-soon')">
+        <img src="new-favicon.png" alt="win" onerror="this.src='new-favicon.png'" style="width: 12px;">
+        NewSite.exe
+    </button>
+
     <div class="task-tray">
         <div id="clock">12:00 PM</div>
     </div>
