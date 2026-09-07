@@ -1,0 +1,147 @@
+/* mochara.cc — Windows XP edition
+   Styling for the "Branding for Packbase" document window. Uses the same
+   purple XP chrome as the rest of the site, with a dark, high-contrast
+   reading surface inside the window body — comparable to the "High
+   Contrast Black" accessibility theme XP shipped with, and appropriate
+   here since the article's own subject (Packbase) is branded in dark +
+   red/pink, which the original page reflected with its background and
+   theme-color. */
+
+.post-desktop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 28px 14px 60px;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+    background-attachment: fixed;
+}
+
+.post-window {
+    position: relative;
+    width: 100%;
+    max-width: 780px;
+}
+
+.post-content {
+    background: #14141a;
+    color: #f2f2f2;
+    padding: 0;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.post-content p,
+.post-content h1,
+.post-content i,
+.post-content .post-caption {
+    color: #f2f2f2;
+}
+
+.post-back {
+    display: inline-flex;
+    margin: 14px 0 0 14px;
+    text-decoration: none;
+}
+
+.post-title-block {
+    text-align: center;
+    padding: 18px 20px 22px;
+}
+
+.post-logo {
+    width: 17%;
+    min-width: 70px;
+    max-width: 140px;
+    margin-bottom: 10px;
+}
+
+.post-title-block h1 {
+    font-weight: 600;
+    font-size: clamp(28px, 6vw, 48px);
+    margin: 0 0 6px;
+    font-family: "Trebuchet MS", var(--sans-serif);
+}
+
+.post-subtitle {
+    font-size: clamp(14px, 2.4vw, 20px);
+    margin: 0;
+    opacity: 0.9;
+}
+
+.post-section {
+    padding: 0 20px 20px;
+    line-height: 1.7;
+}
+
+.post-showcase {
+    margin: 0 20px 18px;
+    background: rgba(255, 255, 255, 0.03);
+    border-color: #444 !important;
+}
+
+.post-showcase legend {
+    background: #14141a;
+    padding: 0 6px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.post-showcase p {
+    line-height: 1.7;
+}
+
+.post-image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.post-image-row img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.post-caption {
+    font-size: 13px;
+    font-style: italic;
+    opacity: 0.75;
+    text-align: center;
+    margin: 4px 0 0;
+}
+
+.post-footer {
+    text-align: center;
+    padding: 10px 20px 26px;
+    border-top: 1px solid #333;
+    margin-top: 10px;
+}
+
+.post-footer img {
+    width: 10%;
+    min-width: 40px;
+    max-width: 70px;
+    margin-bottom: 6px;
+}
+
+.post-footer p {
+    font-size: 13px;
+    margin: 0;
+    opacity: 0.85;
+}
+
+@media (max-width: 640px) {
+    .post-content {
+        max-height: none;
+    }
+
+    .post-window {
+        max-width: 100%;
+    }
+}

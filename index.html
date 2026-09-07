@@ -4,116 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>mochara.cc</title>
-    <link rel="icon" href="/favicon.png" sizes="any">
-    <link rel="stylesheet" href="https://jdan.github.io/98.css/98.css">
+    <link rel="icon" href="/icons/favicon.png" sizes="any">
+    <link rel="stylesheet" href="XP.css">
     <link rel="stylesheet" href="style.css">
-    <meta property="og:image" content="/favicon.png">
-    <meta name="theme-color" content="#5900AC" />
+    <link rel="stylesheet" href="font.css">
+    <meta property="og:image" content="/hero-embed.png">
+    <meta name="theme-color" content="#5900AC">
     <meta property="og:url" content="">
     <meta name="og:title" content="Mocha The Raccoon">
-    <meta name="og:description" content="hi, i'm mocha.">    
+    <meta name="og:description" content="hi, i'm mocha.">
 </head>
 <body>
 
 <div id="desktop">
-    <div class="window active-win" id="main-window" style="left: 50%; top: 50%; transform: translate(-50%, -50%);">
+
+    <div class="desktop-icons">
+        <button type="button" class="desktop-icon" data-action="open" data-target="main-window">
+            <img src="/icons/raccos.png" alt="">
+            <span>mochara.cc</span>
+        </button>
+    </div>
+
+    <div class="window active-win" id="main-window" role="dialog" aria-labelledby="main-window-title"
+         style="left: 50%; top: 46%; transform: translate(-50%, -50%);">
         <div class="title-bar">
-            <div class="title-bar-text">mochara.cc</div>
+            <div class="title-bar-text" id="main-window-title">
+                <img src="/icons/raccos.png" alt="">
+                mochara.cc
+            </div>
             <div class="title-bar-controls">
-                <button aria-label="Close" onclick="toggleWindow('main-window')"></button>
+                <button aria-label="Minimize" data-action="minimize" data-target="main-window"></button>
+                <button aria-label="Close" data-action="close" data-target="main-window"></button>
             </div>
         </div>
-        <div class="window-content">
+        <div class="window-body">
             <div class="profile-header">
                 <img src="racc%20boi%20c.svg" alt="Mochara Logo" class="profile-img">
                 <h1>Mocha The Raccoon</h1>
-                <p>21 | he/they | AUS</p>
+                <p class="profile-tagline">21 | he/they | AUS</p>
             </div>
-            
-            <nav class="link-container">
-                <a href="https://youtube.com/@MochaRacc" class="win-button">YouTube</a>
-                <a href="https://x.com/MochaRacc_" class="win-button">Twitter</a>
-                <a href="https://instagram.com/mocharacc" class="win-button">Instagram</a>
-                <a href="https://t.me/MochaRacc" class="win-button">Telegram</a>
-                <a href="https://bsky.app/profile/mochara.cc" class="win-button">Bluesky</a>
-                <a href="https://tiktok.com/@mocharacc" class="win-button">TikTok</a>
-                <a href="https://packbase.app/@mocha" class="win-button">Packbase</a>
-                <a href="https://www.furaffinity.net/user/mocharacc" class="win-button">Furaffinity</a>
-                <a href="https://steamcommunity.com/id/MochaRacc/" class="win-button">Steam</a>
-                <a href="/refsheet.png" class="win-button">Refsheet</a>
+
+            <nav class="link-container" aria-label="Social links">
+                <button href="https://youtube.com/@MochaRacc">YouTube</button>
+                <button href="https://x.com/MochaRacc_">Twitter</button>
+                <button href="https://instagram.com/mocharacc">Instagram</button>
+                <button href="https://t.me/MochaRacc">Telegram</button>
+                <button href="https://bsky.app/profile/mochara.cc">Bluesky</button>
+                <button href="https://tiktok.com/@mocharacc">TikTok</button>
+                <button href="https://packbase.app/@mocha">Packbase</button>
+                <button href="https://www.furaffinity.net/user/mocharacc">Furaffinity</button>
+                <button href="https://steamcommunity.com/id/MochaRacc/">Steam</button>
+                <button href="/refsheet.png">Refsheet</button>
             </nav>
 
             <fieldset class="friends-section">
                 <legend>FRIENDOS:</legend>
                 <div class="button-grid">
-                    <a href="https://catboy.au" target="_blank">
-                        <img src="https://catboy.au/badge.catboy.gif" alt="friendo1">
+                    <a href="https://catboy.au" target="_blank" rel="noopener">
+                        <img src="https://catboy.au/badge.catboy.gif" alt="catboy.au badge" width="88" height="31">
                     </a>
                 </div>
             </fieldset>
             <fieldset class="friends-section">
                 <legend>add my own crazyyy badge:</legend>
                 <div class="button-grid">
-                    <a href="/" target="_blank">
-                        <img src="/badge.mocha.gif" alt="my own badge">
+                    <a href="/" target="_blank" rel="noopener">
+                        <img src="/badge.mocha.gif" alt="mochara.cc badge, 88 by 31 pixels" width="88" height="31">
                     </a>
                 </div>
-            </fieldset>            
+            </fieldset>
+        </div>
+        <div class="status-bar">
+            <p class="status-bar-field">&copy; 2026 - Mocha The Raccoon | mochara.cc</p>
         </div>
     </div>
-</div>
 
- <!-- <div class="window active-win" id="new-site-soon" style="left: 25%; top: 25%; transform: translate(-50%, -50%);">
+    <div class="window hidden" id="about-window" role="dialog" aria-labelledby="about-window-title"
+         style="left: 50%; top: 50%; transform: translate(-50%, -50%); width: 320px;">
         <div class="title-bar">
-            <div class="title-bar-text">New Site</div>
+            <div class="title-bar-text" id="about-window-title">About mochara.cc</div>
             <div class="title-bar-controls">
-                <button aria-label="Close" onclick="toggleWindow('new-site-soon')"></button>
+                <button aria-label="Close" data-action="close" data-target="about-window"></button>
             </div>
         </div>
-        <div class="window-content">
-            <div class="profile-header">
-
-                <img src="now-serving.png" alt="An image with the caption 'A new website experience is coming July 2026' with a revised version of the new Mocha wordmark." class="profile-img">
-                <h1>New wordmark, new website. (in July)</h1>
-                <p>A new website is being cooked up with a side of late July 2026, time to order up soon! But in all seriousness, it's about time I make things a little more... playful.</p>
-            </div>    
+        <div class="window-body">
+            <p>This website was built amongst the traditional owners of the Wurundjuri Woiwurung land, past, present and emerging.</p>
+            <p>Copyright 2026 &mdash; Mocha The Raccoon &copy; | The raccoon logo is created by beeflover01, whilst the wordmarking is original work.</p>
+            <p>naarm rulez!1!1!1!1</p>
+            <div class="field-row" style="justify-content: flex-end;">
+                <button type="button" data-action="close" data-target="about-window">OK</button>
+            </div>
         </div>
     </div>
-</div> -->
 
-<div id="start-menu" class="hidden">
-    <div class="start-sidebar"><b>racc</b>OS</div>
-    <div class="start-items">
-        <div class="start-item">This website was built amongst the traditional owners of the Wurundjuri Woiwurung land, past, present and emerging.</div>
-        <div class="start-item">Copyright 2026 - Mocha The Raccoon © | The raccoon logo, is created by beeflover01 whilst the workmarking is original work.</div>
-        <div class="start-item"> naarm rulez!1!1!1!1</div>
-        <hr>
-        <a href="mailto:hello@mochara.cc" class="start-item" style="text-decoration:none; color:black;">email me</a>
+
+<div id="start-menu" class="hidden" role="menu" aria-label="Start menu">
+    <div class="start-banner">
+        <img src="pfp.png" alt="">
+        <strong>MochaRacc</strong>
+    </div>
+    <div class="start-body">
+        <div class="start-col start-col-left">
+            <div class="start-pinned">
+                <a class="start-item" href="mailto:hello@mochara.cc">
+                    <img src="/icons/mail.png" alt="">
+                    <span class="start-item-label"><strong>E-mail</strong><small>hello@mochara.cc</small></span>
+                </a>
+            </div>
+            <a class="start-item" href="https://transnetpt.com">
+                <img src="https://transnetpt.com/img/favicon.png" alt="">
+                <span class="start-item-label"><strong>Transnet</strong></span>
+            </a>
+            <div class="start-item">
+                <img src="https://grilld.com.au/favicon.ico" alt="">
+                <span class="start-item-label"><strong>I &lt;3 Grill'd</strong></span>
+            </div>
+            <div class="start-item">
+                <img src="/icons/garlic-bread.png" alt="">
+                <span class="start-item-label"><strong>#SlutForGarlicBread</strong></span>
+            </div>
+            <a class="start-item" href="https://ko-fi.com/mocharacc">
+                <img src="https://storage.ko-fi.com/cdn/logomarkLogo.png" alt="">
+                <span class="start-item-label"><strong>Buy me a coffee on Ko-Fi</strong></span>
+            </a>
+        </div>
+        <div class="start-col start-col-right">
+            <button type="button" class="start-item" data-action="open" data-target="about-window">
+                <img src="/icons/raccos.png" alt="">
+                <span class="start-item-label"><strong>About mochara.cc</strong></span>
+            </button>
+            <p class="start-note">Built on the traditional lands of the Wurundjuri Woiwurung people.</p>
+        </div>
     </div>
 </div>
 
-<div id="taskbar">
-    <button id="start-button" onclick="toggleStartMenu()">
-        <img src="raccos.png" alt="win" onerror="this.src='raccos.png'" >
-        Start
+<div id="taskbar" role="toolbar" aria-label="Taskbar">
+    <button id="start-button" type="button" aria-haspopup="true" aria-controls="start-menu">
+        <img src="/icons/raccos.png" alt="">
+        <span class="start-label">start</span>
     </button>
-    <p style="letter-spacing: 3px;"> &nbsp; &nbsp; </p>
-    <button id="taskbar-button" onclick="toggleWindow('main-window')">
-        <img src="favicon.png" alt="win" onerror="this.src='favicon.png'" style="width: 12px;">
-        mochara.cc
-    </button>
-    
-        <p style="letter-spacing: 3px;"> &nbsp; &nbsp; </p>
-    <!-- <button id="taskbar-button" onclick="toggleWindow('new-site-soon')">
-        <img src="new-favicon.png" alt="win" onerror="this.src='new-favicon.png'" style="width: 12px;">
-        NewSite.exe
-    </button> -->
-
+    <div class="taskbar-divider" aria-hidden="true"></div>
+    <div class="taskbar-buttons">
+        <button type="button" data-action="toggle" data-target="main-window" data-window="main-window" aria-pressed="true">
+            <img src="/icons/raccos.png" alt="">
+            <span>mochara.cc</span>
+        </button>
+    </div>
     <div class="task-tray">
-        <div id="clock">12:00 PM</div>
+        <span id="clock">12:00 PM</span>
     </div>
 </div>
 
 <script src="java.js"></script>
+
 </body>
 </html>
