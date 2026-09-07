@@ -406,7 +406,7 @@ body {
 #start-menu strong,
 #start-menu small,
 #start-menu p {
-    font-family: "Pixelated MS Sans Serif", Arial, sans-serif !important;
+    font-family: 'Trebuchet MS', Arial, sans-serif !important;
 }
 
 .start-banner {
@@ -427,7 +427,7 @@ body {
 }
 
 .start-banner strong {
-    font-size: 14px;
+    font-size: 18px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
